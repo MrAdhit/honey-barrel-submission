@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root {
+    font-family: "DM Sans", sans-serif;
+}
+
+body {
+    background: #1E190F;
+    background: linear-gradient(137deg, rgba(30, 25, 15, 1) 0%, rgba(18, 15, 9, 1) 100%);
+    color: #FFF;
+
+    height: 100vh;
+    
+    display: flex;
+    
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+    
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+body > button {
+    all: unset;
+    
+    display: block;
+
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 16px;
+    
+    cursor: pointer;
+    width: 100%;
+    height: 60px;
+    
+    text-align: center;
+    
+    background-color: #16575B;
+    border-radius: 14px;
+
+    transition: background-color 0.5s ease;
+}
+
+body > button:disabled {
+    cursor: progress;
+    background-color: #16585b94;
+}
+
+#deal {
+    display: flex;
+
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+    
+    margin-left: 10px;
+    margin-right: 10px;
+
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 10px;
+    
+    bottom: 0;
+    
+    height: 0;
+    
+    overflow: hidden;
+
+    transition: height 0.5s ease;
+}
+
+#deal > #price {
+    font-size: 14px;
+}
+
+#deal > #price > #before {
+    text-decoration: line-through;
+    color: red;
+}
+
+#deal > #price > #after {
+    color: greenyellow;
+}

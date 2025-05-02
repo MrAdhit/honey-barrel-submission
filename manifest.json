@@ -1,0 +1,17 @@
+{
+    "name": "Honey Barrel",
+    "version": "0.1",
+    "manifest_version": 3,
+    "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'"
+    },
+    "side_panel": {
+        "default_path": "page/index.html"
+    },
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    "permissions": ["activeTab", "scripting", "sidePanel"],
+    "host_permissions": ["https://*/*", "http://*/*"]
+}
